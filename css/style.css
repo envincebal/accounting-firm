@@ -33,7 +33,17 @@ p {
 }
 
 .text-primary {
-  color: #93cb52;
+  color: #92cb52;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
 }
 
 .large-heading {
@@ -65,6 +75,18 @@ p {
   padding: 3rem 0;
 }
 
+.padding-1 {
+  padding: 1.5rem;
+}
+
+.padding-2 {
+  padding: 2rem;
+}
+
+.padding-3 {
+  padding: 3rem;
+}
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -83,6 +105,15 @@ p {
   color: #fff;
 }
 
+.list{
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li{
+  padding: 0.5rem 0;
+  border-bottom:  #444 dotted 1px;
+}
 /* Navbar */
 
 .navbar {
@@ -139,20 +170,46 @@ p {
 
 /* Section: What We Do */
 
-.items {
+.what .items {
   display: flex;
   padding: 1rem;
 }
 
-.item {
+.what .items .item {
   flex: 1;
   text-align: center;
   padding: 1rem;
 }
 
-.item i {
+.what .items .item i {
   background: #93cb52;
   padding: 1rem;
   border-radius: 50%;
   margin: 0 0 1rem 0;
+}
+
+/* Section: Who We Are */
+
+.who {
+  display: flex;
+}
+
+.who div {
+  flex: 1;
+}
+
+.who-img {
+  background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+/* Clients */
+
+.clients .items {
+  display: flex;
+}
+
+.clients .items img{
+  display: block;
+  margin: auto;
+  width: 60%;
 }
