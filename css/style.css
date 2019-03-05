@@ -92,6 +92,7 @@ p {
 }
 
 .btn {
+  cursor: pointer;
   display: inline-block;
   color: #fff;
   background: #93cb52;
@@ -120,7 +121,7 @@ p {
 }
 /* Navbar */
 
-.navbar {
+#navbar {
   background: #333;
   color: #fff;
   position: sticky;
@@ -131,19 +132,19 @@ p {
   padding: 1rem;
 }
 
-.navbar ul {
+#navbar ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-.navbar a {
+#navbar a {
   color: #fff;
   padding: 1.45rem;
   margin: 0 0.25rem;
 }
 
-.navbar a:hover {
+#navbar a:hover {
   background: #93cb52;
 
 }
@@ -165,7 +166,7 @@ p {
   height: 100%;
   padding: 0 2rem;
   position: absolute;
-  top: 60px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -174,18 +175,18 @@ p {
 
 /* Section: What We Do */
 
-.what .items {
+#what .items {
   display: flex;
   padding: 1rem;
 }
 
-.what .items .item {
+#what .items .item {
   flex: 1;
   text-align: center;
   padding: 1rem;
 }
 
-.what .items .item i {
+#what .items .item i {
   background: #93cb52;
   padding: 1rem;
   border-radius: 50%;
@@ -194,11 +195,11 @@ p {
 
 /* Section: Who We Are */
 
-.who {
+#who {
   display: flex;
 }
 
-.who div {
+#who div {
   flex: 1;
 }
 
@@ -220,7 +221,7 @@ p {
 
 /* Section: Contact */
 
-.contact{
+#contact{
   display: flex;
 }
 
@@ -229,7 +230,9 @@ p {
   flex: 1;
 }
 
-.form-group{
+.form-group,
+.contact-title,
+.contact-subtitle{
   margin: 0.75rem;
 }
 
@@ -241,4 +244,8 @@ p {
 .contact-form textarea{
   width: 100%;
   padding: 0.5rem;
+}
+
+.submit{
+  margin: 0 0 0 0.75rem;
 }
